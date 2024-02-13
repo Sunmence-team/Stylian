@@ -1,0 +1,387 @@
+/* Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+:root{
+    /* Color */
+    --dark-brown: #984D38;
+    --deep-blue: #181E41;
+    --white: #fff;
+
+    /* font sizes */
+
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+    background-image: linear-gradient(135deg, #984D38 5%, #181E41);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+nav{
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .profile-none{
+    display: none;
+}
+
+nav .brand{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+nav .brand .logo{
+    font-size: 24px;
+    color: var(--white);
+}
+
+nav .search-bar{
+    background: transparent;
+    padding: 7px 10px;
+    display: flex;
+    gap: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+nav .search-bar input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+nav input::placeholder{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+nav ul a{
+    color: var(--white);
+}
+
+nav .profile{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav .icons{
+    display: flex;
+    gap: 15px;
+    color: var(--white);
+}
+
+section{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.about-us{
+    padding: 0px 400px;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    padding: 7px 20px;
+    background: #B75CFF;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: ease-in-out .3s;
+}
+
+button:hover{
+    background: #b65cff7e;
+}
+
+.about-us h1, .more h1,.header h1{
+    font-size: 35px;
+}
+
+.about-us h3,.more h3{
+    color: #B75CFF;
+}
+
+
+.more{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.more .content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 80px;
+}
+
+.more button{
+    width: 20%;
+}
+
+.makers{
+    margin-top: 60px;
+}
+
+
+.header{
+    text-align: center;
+    padding: 0 250px;
+    margin-bottom: 40px;
+}
+
+.makers-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.maker-details{
+    text-align: center;
+}
+
+
+
+
+
+footer{
+    padding: 20px 100px;
+    display: grid;
+    grid-template-columns: 3fr  1fr;
+    align-items: center;
+    gap: 40px;
+    background-color: #b65cff33;
+    margin-top: 40px;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+#close{
+    display: none;
+}
+
+.burger{
+    display: none;
+}
+
+main{
+    /* overflow-x: hidden; */
+    position: relative;
+    /* overflow-x: hidden; */
+    height: auto;
+}
+
+
+
+/* Explore */
+
+.explores{
+    padding: 30px 100px;
+}
+
+.explores h1{
+    text-align:center;
+    margin-top: 40px;
+}
+
+.up-brands{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+
+.brand-logo{
+    width: 100%;
+}
+
+.brand-detail{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.brand-card{
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+.brand-detail img{
+    margin-top: -60px;
+}
+
+.brand-detail button{
+    width: 100%;
+    background-color: #B75CFF;
+}
+
+
+
+
+/* Responsiveness */
+@media (max-width:1024px) {
+    nav .profile{
+        display: none;
+    }
+
+    nav .profile-none{
+        display: block;
+    }
+
+    .profile-none i{
+        display: none;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: -400px;
+        width: 30%;
+        background-color: var(--deep-blue);
+        padding: 40px 20px;
+        flex-direction: column;
+        z-index: 10000;
+        /* bottom: 0; */
+    }
+
+    .link i{
+        color: white;
+    }
+
+    .burger, #close{
+        display: block;
+    }
+
+    
+
+    .buttons{
+        justify-content: center;
+    }
+
+    .about-us{
+        padding: 100px ;
+    }
+
+    .more button{
+        width: 50%;
+    }
+
+    .makers .header{
+        padding: 20px 40px;
+    }
+
+    .makers-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .up-brands{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .about-us{
+        padding: 40px ;
+    }
+
+ 
+
+    .makers-cards,.more{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        place-items: center;
+    }
+
+    .about-us{
+    height: 60vh;
+
+    }
+
+    .makers .header{ 
+        padding: 10px;
+    }
+   
+section{
+    padding: 20px;
+}
+
+.more img{
+    width: 80%;
+}
+
+
+    footer{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav .brand .search-bar{
+        display: none;
+    }
+
+    .up-brands{
+        grid-template-columns: 1fr ;
+    }
+
+    main,nav,footer,.explores{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+    
+
+
+}
+
+
+
+
+
+

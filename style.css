@@ -1,0 +1,192 @@
+/* Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* Color */
+    --dark-brown: #984D38;
+    --deep-blue: #181E41;
+    --white: #fff;
+
+    /* font sizes */
+
+}
+
+
+main{
+    background-image: linear-gradient(45deg, #984D38, #181E41);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 60px 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: var(--white);
+}
+
+.form{
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form .new-user{
+    margin: 30px 0;
+}
+
+.form input{
+    padding: 5px 10px ;
+    outline: none;
+    background: transparent;
+    color: var(--white);
+    width: 60%;
+    border: none;
+    border-bottom: 0.5px solid var(--white);
+    margin-top: 20px;
+}
+.form input::placeholder{
+    color: var(--white);
+}
+
+.names{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+form{
+    width: 100%;
+}
+
+form .continue{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+
+form .continue input{
+    margin-left: auto;
+    border: 1px solid var(--white);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 10px;
+    transition: ease-in-out .3s;
+}
+
+form .continue input:hover{
+    border: 1px solid #181E41;
+    background: #181E41;
+    color: #fff;
+}
+
+.form .media{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;justify-content: center;
+    padding: 10px 0;
+    border: 1px solid ;
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+}
+
+.alt{
+    display: grid;
+    gap: 20px;
+}
+
+.form .apple{
+    background: #333;
+    border: 1px solid #333;
+}
+.form .apple:hover{
+    background: black;
+    border: 1px solid black;
+}
+
+.form .facebook{
+    background: #1876f2be;
+    border: 1px solid #1876f2be;
+}
+.form .facebook:hover{
+    background: #1877F2;
+    border: 1px solid #1877F2;
+}
+
+.form .google:hover{
+    background: rgba(128, 128, 128, 0.13);
+   }
+
+   .form button{
+    float: right;
+    background-color: #181E41;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: none;
+   }
+
+   .form button:hover{
+    background-color: #181e417d;
+   }
+
+
+   @media (max-width:1024px) {
+        main{
+    padding: 60px 150px;
+
+        }
+   }
+   @media (max-width:767px) {
+    
+    main{
+        padding: 30px 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+            }
+        .form{
+               position: absolute;
+               top: 30px;
+                left: 15%;
+                width: 70%;
+            }
+            form{
+                overflow: hidden;
+            }
+            .alt p{
+                font-size: 10px;
+            }
+
+            .names{
+                flex-direction: column;
+            }
+   }
